@@ -1,3 +1,4 @@
+const HtmlWebpackPlugin = require("html-webpack-plugin");
 const path = require('path');
 
 module.exports = {
@@ -8,7 +9,7 @@ module.exports = {
         test: /\.ts?$/,
         use: 'ts-loader',
         exclude: /node_modules/,
-      },
+      }
     ],
   },
   resolve: {
@@ -18,6 +19,13 @@ module.exports = {
     filename: 'bundle.js',
     path: path.resolve(__dirname, 'dist'),
   },
+
+  plugins: [
+    new HtmlWebpackPlugin({
+        title: 'our project', 
+        template: 'src/custom.html' }) 
+   ],
+
   devServer: {
     static: path.join(__dirname, "dist"),
     compress: true,
