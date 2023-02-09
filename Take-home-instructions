@@ -1,0 +1,87 @@
+# Blog (SPA) - Take-home assignment
+
+In this take-home assignment, you'll **build a blog using vanilla JavaScript**.
+
+## 💻 Application requirements
+
+### 🎯 Goal
+
+You are tasked to build a blog using vanilla JavaScript. It should be a single page application with CRUD capabilities.
+
+👉 Make use of the attached [UI Design - Blog (SPA) PDF file](./UI%20Design%20-%20Blog%20(SPA).pdf).
+
+### 🛠 Project setup
+
+The application should be build using regular HTML, CSS and JavaScript.
+
+❌ You are **not allowed** to use any UI frameworks or libraries (like React or Vue)
+
+✅ You are **encouraged** to use a module bundler like [Vite](https://vitejs.dev/), [Parcel](https://parceljs.org/) or [Rollup](https://rollupjs.org/)
+
+### 📖 User stories
+
+- As a user I can CRUD a post
+- As a user I can see individual posts
+- As a user I can see all posts
+
+### 🔧 Key features
+
+- Create/read/update/delete a post
+- Pagination
+
+### 🧭 Routes
+
+Your application will have **4 views**:
+
+- Home on `/`
+  - Includes 3 most recent posts
+  - Includes link to create new post
+  - Includes link to all posts
+- All posts on `/posts`
+  - Includes all posts
+  - Includes pagination (show 6 posts per page)
+- New post form on `/posts/new`
+  - Includes form to create new post
+- Post details on `/posts/:id`
+  - Includes single post details
+  - Includes link to all posts
+
+### 💽 Data model for a post
+
+A `Post` consists of the following attributes:
+
+- `title`
+- `description`
+- `created_at`
+
+### ⭐️ Tips
+
+- Posts can be stored in localStorage for data persistence
+- CSS frameworks are allowed
+- Validate text input (search and form input)
+
+### ❗️ Edge cases
+
+Make sure your application is able to handle the following edge cases:
+
+- What if a user goes to a non-existent posts page?
+- What if a user's query results in 0 search results?
+- What if a user submits an empty post?
+
+### ✅ Evaluation criteria
+
+You will have successfully passed the assignment if your project:
+
+- [ ] Demonstrates a correct usage of JavaScript
+- [ ] Has all features working without fault
+- [ ] Code is cleanly written
+- [ ] Data is persistent on page refresh
+- [ ] It's responsive
+
+## 📋 Deliverables
+
+You are required to deliver the following:
+
+- [ ] Code hosted on GitHub
+- [ ] README, including project setup instructions
+- [ ] Deployed application + demo link
